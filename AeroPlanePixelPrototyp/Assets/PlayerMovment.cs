@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-enum MoveState
+public enum MoveState
 {
     up,
     down,
@@ -11,7 +11,7 @@ enum MoveState
 public class PlayerMovment : MonoBehaviour {
 
     Rigidbody2D rigidbody2D;
-    MoveState moveState;
+    public MoveState moveState;
     public float speed;
     public int Buttonset = 0;
 
