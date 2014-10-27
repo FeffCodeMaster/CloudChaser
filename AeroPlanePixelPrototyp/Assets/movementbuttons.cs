@@ -73,7 +73,7 @@ public class movementbuttons : MonoBehaviour
             button3.name = rightOrLeft;
          
         }
-        if (playerMovement.Buttonset == 3)
+        if (playerMovement.Buttonset <= 3)
         {
             playerMovement.Buttonset = 0;
         }

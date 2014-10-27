@@ -3,9 +3,9 @@ using System.Collections;
 
 public class CollisionDeath : MonoBehaviour {
 
-	// Use this for initialization
+    string levelName;
 	void Start () {
-	
+        levelName = Application.loadedLevelName;
 	}
 	
 	// Update is called once per frame
@@ -17,7 +17,7 @@ public class CollisionDeath : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject);
-            Application.LoadLevel("AeroPlanePixel");
+            Application.LoadLevel(levelName);
         }
     }
 }
